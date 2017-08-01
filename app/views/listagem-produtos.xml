@@ -1,0 +1,9 @@
+<Alloy>
+	<Tab title="Prod." id="prodTab">
+		<Window class="container" layout="vertical">
+			<Label top="10dp">Produtos</Label>
+			<Button onClick="clickNovoProduto" top="5dp" right="5dp" left="5dp" width="Ti.UI.FILL" height="40dp">Adicionar Produto</Button>
+			<TableView id="table"></TableView>
+		</Window>
+	</Tab>
+</Alloy>

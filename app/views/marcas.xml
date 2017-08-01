@@ -1,0 +1,12 @@
+<Alloy>
+	<Tab title="Marca" id="marcaTab">
+		<Window class="container" layout="vertical">
+			<Label top="5dp" left="5dp">Marcas</Label>
+			<TextField id="txtMarca" top="5dp" left="5dp" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"
+			width="Ti.UI.FILL" right="5dp" height="40dp"/>
+			<Button onClick="SalvarMarca" top="5dp" right="5dp" left="5dp" width="Ti.UI.FILL" height="40dp">Salvar</Button>
+			<TableView id="table"></TableView>
+		</Window>
+	</Tab>
+</Alloy>
+

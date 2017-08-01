@@ -1,0 +1,37 @@
+<Alloy>
+	<Tab title="Lista" id="listaTab">
+		<Window id="win" height="100%">
+			<View layout="horizontal">
+				<View id="inputbar" top="0" width="100%" >
+					<Label id="title" >TEST APP</Label>
+				</View>
+				<View id="input" top="0" layout="horizontal" width="100%">
+					<View layout="horizontal" width="30%">
+						<Label class="label" id="label" >Some Field1:</Label>
+						<TextField class="textfld" id="someFld1"  />
+					</View>
+					<View layout="horizontal" width="37%">
+						<Label class="label" id="label3" >Some Field2:</Label>
+						<TextField class="textfld" id="someFld2" />
+					</View>
+					<View layout="horizontal" width="15%">
+						<Label class="label" id="label4">Some Field3:</Label>
+						<TextField class="textfld" id="someFld3"/>
+					</View>
+					<View layout="horizontal"  width="17%" id="sfb">
+						<Button id="search_btn" platform="ios" onClick="doClick" style="Titanium.UI.iPhone.SystemButtonStyle.PLAIN"></Button>
+						<Button id="search_btn" platform="android,mobileweb" onClick="doClick" ></Button>
+					</View>
+				</View>
+				<View id="pView" layout="vertical">
+					<TableView id="table" top="2" />
+				</View>
+				<View id="availView"  visible="false" layout="horizontal" height="99%" width="100%">
+					<View ns="Ti.Map" id="mapview" width="61%" height="100%" userLocation="false" ></View>
+					<TableView id="plantTable" width="39%" />
+				</View>
+			</View>
+		</Window>
+	</Tab>
+</Alloy>
+

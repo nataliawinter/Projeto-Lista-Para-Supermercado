@@ -1,0 +1,20 @@
+<Alloy>
+	<Window class="container" layout="vertical">
+		<Label top="10dp">Produtos</Label>
+		<Label top="15dp" left="5dp">Nome do Produto</Label>
+		<TextField id="txtNome" top="10dp" left="5dp" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"
+		width="Ti.UI.FILL" right="5dp" height="40dp"/>
+		<Button onClick="EscolherMarca" id="txtButtonMarca" top="5dp" right="5dp" left="5dp" width="Ti.UI.FILL" height="40dp" title="Clique e Escolha uma Marca"/>
+		<Button onClick="EscolherDepartamento" id="txtButtonDepartamento" top="5dp" right="5dp" left="5dp" width="Ti.UI.FILL" height="40dp" title="Clique e Escolha um Departamento"/>		
+		<Button onClick="SalvarProduto" top="15dp" right="5dp" left="5dp" width="Ti.UI.FILL" height="40dp">Salvar produto</Button>
+		
+		<Button onClick="vaiParaListagem" top="15dp" right="5dp" left="5dp" width="Ti.UI.FILL" height="40dp">voltar</Button>
+		
+		<TextField visible="false" id="txtMarcaDoProduto" top="10dp" left="5dp" value="2" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"
+		width="Ti.UI.FILL" right="5dp" height="10dp"/>
+		
+		<TextField visible="false" id="txtDepartamentoDoProduto" top="10dp" left="5dp" value="2" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"
+		width="Ti.UI.FILL" right="5dp" height="10dp"/>
+		
+	</Window>
+</Alloy>

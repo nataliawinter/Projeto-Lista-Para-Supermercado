@@ -1,0 +1,11 @@
+<Alloy>
+	<Tab title="Superm." id="superTab">
+		<Window class="container" layout="vertical">
+			<Label top="5dp" left="5dp">Supermercados</Label>
+			<TextField id="txtSupermercado" top="5dp" left="5dp" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED"
+			width="Ti.UI.FILL" right="5dp" height="40dp"/>
+			<Button onClick="SalvarSupermercado" top="5dp" right="5dp" left="5dp" width="Ti.UI.FILL" height="40dp">Salvar</Button>
+			<TableView id="table"></TableView>
+		</Window>
+	</Tab>
+</Alloy>

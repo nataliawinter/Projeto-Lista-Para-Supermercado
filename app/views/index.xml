@@ -1,0 +1,10 @@
+<Alloy>
+	<TabGroup backgroundColor="white">
+		<Require src="departamentos"/>
+		<Require src="marcas"/>
+		<Require src="listagem-produtos"/>
+		<Require src="supermercados"/>
+		<Require src="lista"/>
+	</TabGroup>
+</Alloy>
+
