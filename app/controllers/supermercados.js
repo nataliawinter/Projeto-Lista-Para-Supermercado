@@ -88,8 +88,6 @@ function selectRow(e) {
 	dialog.show();
 }
 
-
-
 function combobox(){
 	
 }
