@@ -161,39 +161,3 @@ exports.excluirMarca = function(marca) {
 	db.execute('DELETE FROM marca WHERE MarcaID=?', marca.MarcaID);
 	db.close();
 }
-/*BANCO DE DADOS DE PRODUTOS*/
-// exports.createDatabase = function(){
-// var db = Ti.Database.open(DATABASE_NAME);
-// db.execute('CREATE TABLE IF NOT EXISTS produto (ProdutoID INTEGER PRIMARY KEY AUTOINCREMENT, NomeProduto TEXT, UltimoVlrPago INTEGER, MarcaID INTEGER, DepartamentoID INTEGER, FOREIGN KEY(MarcaID) REFERENCES marca(MarcaID), FOREIGN KEY(DepartamentoID) REFERENCES departamento(DepartamentoID))');
-// }
-
-/*BANCO DE DADOS NOME DA LISTA*/
-
-// exports.createDatabase = function() {
-// var db = Ti.Database.open(DATABASE_NAME);
-// db.execute('CREATE TABLE IF NOT EXISTS lista (ListaID INTEGER PRIMARY KEY AUTOINCREMENT, DataCompra DATETIME DEFAULT CURRENT_TIMESTAMP)');
-// db.close();
-// }
-//
-// exports.adicionarLista = function(departamento) {
-// var db = Ti.Database.open(DATABASE_NAME);
-// db.execute('INSERT INTO departamento (NomeDepartamento) values (?)', departamento.NomeDepartamento);
-// db.close();
-// }
-
-/* BANCO DE DADOS ITENS DA LISTA */
-// exports.createDatabase = function() {
-// var db = Ti.Database.open(DATABASE_NAME);
-// db.execute('CREATE TABLE IF NOT EXISTS itens_lista (ListaItensID INTEGER PRIMARY KEY AUTOINCREMENT, QtdPrevista INTEGER(100), QtdComprada INTEGER(100), ValorPago INTEGER(100), Comprado TINYINT(1))');
-// db.close();
-// }
-
-/* BANCO DE DADOS PRODUTOS */
-
-// exports.createDatabase = function(){
-// var db = Ti.Database.open(DATABASE_NAME);
-// db.execute('CREATE TABLE IF NOT EXISTS produto (ProdutoID INTEGER PRIMARY KEY AUTOINCREMENT, INTEGER(100), QtdComprada INTEGER(100), ValorPago INTEGER(100), Comprado TINYINT(1))');
-// db.close();
-//
-// }
-
